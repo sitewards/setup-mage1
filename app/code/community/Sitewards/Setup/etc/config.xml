@@ -1,0 +1,14 @@
+<config>
+    <modules>
+        <Sitewards_Setup>
+            <version>0.1.0</version>
+        </Sitewards_Setup>
+    </modules>
+    <global>
+        <models>
+            <sitewards_setup>
+                <class>Sitewards_Setup_Model</class>
+            </sitewards_setup>
+        </models>
+    </global>
+</config>

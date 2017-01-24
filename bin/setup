@@ -1,0 +1,10 @@
+#!/usr/bin/env php
+<?php
+
+require_once __DIR__.'/../../../../vendor/autoload.php';
+
+use Sitewards\SetupMage1\Application\Bridge;
+use Sitewards\Setup\Application;
+
+$application = new Application(new Bridge());
+$application->run();

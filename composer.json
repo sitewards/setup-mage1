@@ -1,0 +1,28 @@
+{
+    "name": "sitewards/setup-magento1",
+    "description": "Sitewards Setup",
+    "type": "magento-module",
+    "license": "MIT",
+    "require": {
+        "php": "~5.5.0|~5.6.0|~7.0.0",
+        "sitewards/setup": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "Sitewards\\SetupMage1\\": ""
+        }
+    },
+    "authors": [
+        {
+            "name": "David Manners",
+            "email": "david.manners@sitewards.com"
+        },
+        {
+            "name": "Darko Poposki",
+            "email": "darko.poposki@sitewards.com"
+        }
+    ],
+    "bin": [
+        "bin/setup"
+    ]
+}

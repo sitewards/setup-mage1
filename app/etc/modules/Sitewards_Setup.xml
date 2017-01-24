@@ -1,0 +1,9 @@
+<config>
+    <modules>
+        <Sitewards_Setup>
+            <active>true</active>
+            <codePool>community</codePool>
+            <depends/>
+        </Sitewards_Setup>
+    </modules>
+</config>
