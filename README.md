@@ -25,15 +25,17 @@ This module contains a bin script and an implementation of the [main module's pa
 
 Current commands are as follows:
 
+### Export ###
 Export page(s) from Magento1 to JSON format.
 
-`bin/setup page:export [page1] [page2]`
+`bin/setup page:export [<pageID>] [<pageID>] ...`
 
+### Import ###
 Import page(s) from JSON to Magento1.
 
 `bin/setup page:import`
 
-### Authors ###
+## Authors ##
 
 * David Manners <david.manners@sitewards.com>
 * Darko Poposki <darko.poposki@sitewards.com>
