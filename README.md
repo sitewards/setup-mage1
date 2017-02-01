@@ -1,6 +1,6 @@
-# Sitewards Setup Magento 1 Bridge #
+# Sitewards Setup Magento1 Bridge #
 
-This Magento 1 module is a bridge for the [sitewards setup](https://github.com/sitewards/setup) system to allow the import and export of content and configuration in Magento 2.
+This Magento1 module is a bridge for the [sitewards setup](https://github.com/sitewards/setup) system to allow the import and export of content and configuration in Magento1.
 
 ## Architecture ##
 
@@ -8,7 +8,7 @@ This module contains a bin script and an implementation of the [main module's pa
 
 **bin/setup**
 
-* Inject the Magento 1 bridge into the main application,
+* Inject the Magento1 bridge into the main application,
 * Run the main application,
 
 **Application/Bridge.php**
