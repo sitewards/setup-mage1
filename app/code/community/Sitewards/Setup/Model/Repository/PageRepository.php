@@ -9,7 +9,7 @@
 use Sitewards\Setup\Domain\Page\Page;
 use Sitewards\Setup\Domain\Page\PageRepositoryInterface;
 
-class Sitewards_Setup_Model_Repository_PageRepository implements PageRepositoryInterface
+final class Sitewards_Setup_Model_Repository_PageRepository implements PageRepositoryInterface
 {
     /**
      * @var \Mage_Cms_Model_Resource_Page_Collection
