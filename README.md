@@ -19,7 +19,7 @@ This module contains a bin script and an implementation of the [main module's pa
 **Repository/PageRepository.php**
 
 * Requires the `Mage_Cms_Model_Resource_Page_Collection` class,
-* Implement the `findByIds`, `findAll` and `import` methods from the main application,
+* Implement the `find` and `save` methods from the main application,
 
 ## Commands ##
 
