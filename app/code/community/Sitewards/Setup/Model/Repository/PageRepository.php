@@ -24,26 +24,10 @@ final class Sitewards_Setup_Model_Repository_PageRepository implements PageRepos
     /**
      * {@inheritdoc}
      */
-    public function findByIds(array $ids)
+    public function find(array $ids = [])
     {
         $this->pageCollection->addFieldToFilter('identifier', [ 'in' => $ids ]);
 
-        return $this->findItems();
-    }
-
-    /**
-     * {@inheritdoc}
-     */
-    public function findAll()
-    {
-        return $this->findItems();
-    }
-
-    /**
-     * @return PageInterface[]
-     */
-    private function findItems()
-    {
         $pages = [];
 
         /** @var \Mage_Cms_Model_Page $page */
@@ -62,7 +46,7 @@ final class Sitewards_Setup_Model_Repository_PageRepository implements PageRepos
     /**
      * {@inheritdoc}
      */
-    public function import(PageInterface $page)
+    public function save(PageInterface $page)
     {
         /** @var Mage_Cms_Model_Page $oPage */
         $oPage = Mage::getModel('cms/page');
