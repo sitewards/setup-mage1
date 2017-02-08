@@ -9,7 +9,7 @@
 use Sitewards\Setup\Domain\Page\Page;
 use Sitewards\Setup\Domain\Page\PageRepositoryInterface;
 
-class Sitewards_Setup_Model_Repository_PageRepository implements PageRepositoryInterface
+final class Sitewards_Setup_Model_Repository_PageRepository implements PageRepositoryInterface
 {
     /**
      * @var \Mage_Cms_Model_Resource_Page_Collection
@@ -21,6 +21,9 @@ class Sitewards_Setup_Model_Repository_PageRepository implements PageRepositoryI
         $this->pageCollection = $pageCollection;
     }
 
+    /**
+     * {@inheritdoc}
+     */
     public function findByIds(array $ids)
     {
         $this->pageCollection->addFieldToFilter('identifier', [ 'in' => $ids ]);
@@ -28,11 +31,17 @@ class Sitewards_Setup_Model_Repository_PageRepository implements PageRepositoryI
         return $this->findItems();
     }
 
+    /**
+     * {@inheritdoc}
+     */
     public function findAll()
     {
         return $this->findItems();
     }
 
+    /**
+     * @return PageInterface[]
+     */
     private function findItems()
     {
         $pages = [];
@@ -50,7 +59,10 @@ class Sitewards_Setup_Model_Repository_PageRepository implements PageRepositoryI
         return $pages;
     }
 
-    public function import(Page $page)
+    /**
+     * {@inheritdoc}
+     */
+    public function import(PageInterface $page)
     {
         /** @var Mage_Cms_Model_Page $oPage */
         $oPage = Mage::getModel('cms/page');

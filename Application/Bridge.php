@@ -9,9 +9,8 @@
 namespace Sitewards\SetupMage1\Application;
 
 use Sitewards\Setup\Application\BridgeInterface;
-use Sitewards\Setup\Domain\Page\PageRepositoryInterface;
 
-class Bridge implements BridgeInterface
+final class Bridge implements BridgeInterface
 {
     public function __construct()
     {
@@ -33,7 +32,7 @@ class Bridge implements BridgeInterface
     }
 
     /**
-     * @return PageRepositoryInterface
+     * {@inheritdoc}
      */
     public function getPageRepository()
     {
